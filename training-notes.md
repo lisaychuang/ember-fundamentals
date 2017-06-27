@@ -105,3 +105,35 @@ Hello,
 Reference link: 
 https://guides.emberjs.com/v2.6.0/components/the-component-lifecycle/#toc_detaching-and-tearing-down-component-elements-with-code-willdestroyelement-code
 
+### Data Attributes Binding
+
+* In Ember template (hbs) files, you can include HTML attributes bound to the controller.
+
+e.g.
+
+```
+<div id="logo">
+  <img src={{logoUrl}} alt="Logo">
+</div>
+```
+The data attribute ```{{logoUrl}}``` will generate a HTML file:
+
+```
+<div id="logo">
+  <img src="http://www.example.com/images/logo.png" alt="Logo">
+</div>
+```
+
+To enable data attributes in a component, you must add attribute binding! Use ```Ember.LinkComponent``` or ```Ember.TextField``` for the specific attribute:
+
+```
+Ember.LinkComponent.reopen({
+  attributeBindings: ['data-toggle']
+});
+
+Ember.TextField.reopen({
+  attributeBindings: ['data-toggle', 'data-placement']
+});
+```
+
+Reference link: https://guides.emberjs.com/v2.6.0/templates/binding-element-attributes/#toc-toggle
