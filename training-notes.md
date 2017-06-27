@@ -20,7 +20,7 @@ https://guides.emberjs.com/v2.13.0/object-model/reopening-classes-and-instances/
 
 You should only use reopen() if no instances of this Prototype has been created!
 
-* Use reopenClass() to add functions/ properties to a Constructor. 
+* Use reopenClass() to add static functions/ properties to a Constructor. 
 
 **Reference notes:**
 
@@ -49,6 +49,6 @@ Mike.get(languages) = {js, html}
 Reference links:
 https://www.emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedProperties
 
-
+### Ember.object lifecycle
 
 
