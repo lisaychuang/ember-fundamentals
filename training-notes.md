@@ -53,3 +53,38 @@ https://www.emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedP
 
 Reference link: 
 https://guides.emberjs.com/v2.2.0/components/the-component-lifecycle/
+
+### Helper {{ }}
+
+```
+{{ placeholder-url
+"thing1"        //params[0]
+"thing2"        //params[1]
+align = "left   // hash.align
+height = 24     //hash.height
+
+}}
+```
+
+When passing data as arguments to a helper, always start with POSITIONAL parameters ("thing1") before the OBJECT hash (align=) .
+
+* POSISTIONAL params will merge into an **array** 
+* HASH will merge into an **object**
+
+### One Way Data binding
+
+**Data binding is the automatic synchronization of data between the model and view components.**
+
+By default, Ember use two-way data binding.
+
+Use the {{unbound}} helper to opt. into one-way data binding.   Unbound makes data insensitive to changes after rendering.
+
+e.g.
+
+```
+Hello,
+<strong>
+{{unbound firstName}}
+{{unbound lastName}}
+</strong>
+```
