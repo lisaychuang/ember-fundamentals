@@ -1,5 +1,9 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
 {{!-- Feel free to remove this! --}}
+
+{{#each courses as |thisCourse|}}
+    {{course-list-item 
+        model=thisCourse}}  <!--We need to use model to grab all data-->
+{{/each}}
 
 {{outlet}}

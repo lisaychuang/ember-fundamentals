@@ -1,0 +1,15 @@
+
+{{#link-to 'course' model.slug}}
+<img class="course-image" src="{{unbound model.image-info.square2x.url}}">
+<h4 class="course-title">
+    {{unbound model.title}}
+</h4>
+
+<p class="course-summary">
+    {{unbound model.summary}}
+</p>
+
+{{/link-to}}
+
+
+{{yield}}
