@@ -71,6 +71,13 @@ When passing data as arguments to a helper, always start with POSITIONAL paramet
 * POSISTIONAL params will merge into an **array** 
 * HASH will merge into an **object**
 
+Helpers are global, once defined it will be available across all apps.
+
+Engines are modular chunks, sub-component of an app.  Helpers can also be defined within Engines.
+
+Reference link:
+http://ember-engines.com/
+
 ### One Way Data binding
 
 **Data binding is the automatic synchronization of data between the model and view components.**
