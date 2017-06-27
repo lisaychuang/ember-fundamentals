@@ -43,7 +43,8 @@ Developer = Ember.Object.extend({
 let Mike = Developer.new
 Mike.set(languages: {html})
 
-Mike.get(languages) = {js, html} ```
+Mike.get(languages) = {js, html} 
+```
 
 Reference links:
 https://www.emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedProperties
