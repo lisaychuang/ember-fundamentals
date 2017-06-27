@@ -51,4 +51,5 @@ https://www.emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedP
 
 ### Ember.object lifecycle
 
-
+Reference link: 
+https://guides.emberjs.com/v2.2.0/components/the-component-lifecycle/
