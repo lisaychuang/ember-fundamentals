@@ -95,3 +95,13 @@ Hello,
 {{unbound lastName}}
 </strong>
 ```
+
+#### Ember Components - Basic Lifecycle Hooks
+
+* In Single Page Apps (SPA), $(document).ready() no longer works as the app is on a single page view.  So instead, Ember apps need to use ```didInsertElement()```
+
+* To remove a component from the DOM, use ```willDestroyElement()``` to prevent memory leak and ensure component is removed properly.
+
+Reference link: 
+https://guides.emberjs.com/v2.6.0/components/the-component-lifecycle/#toc_detaching-and-tearing-down-component-elements-with-code-willdestroyelement-code
+
