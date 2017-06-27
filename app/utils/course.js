@@ -13,8 +13,9 @@ const Course = Ember.Object.extend({
 
 
 Course.reopenClass({
-  languageName(name){
-    return this.languages[name] || "Unknown";
+  _lang: {js: 'JavaScript'},
+  languageName(abbre){
+    return this._lang[abbre] || "Unknown";
   }
   });
 
