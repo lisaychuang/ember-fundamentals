@@ -34,7 +34,8 @@ When setting a property on a Constructor, by setting ```concatenatedProperties``
 
 e.g.
 
-```Developer = Ember.Object.extend({
+```
+Developer = Ember.Object.extend({
     languages: {js};
     concatenatedProperties: 'languages'
 });
