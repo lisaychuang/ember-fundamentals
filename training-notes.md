@@ -137,3 +137,14 @@ Ember.TextField.reopen({
 ```
 
 Reference link: https://guides.emberjs.com/v2.6.0/templates/binding-element-attributes/#toc-toggle
+
+### Computed Properties
+
+Use only when properties are:
+1. Evaluated lazily
+2. Drived state , or cached data
+3. Still need ```get/ set```, update in repsonse to dependency changes
+
+The ```{{action}}``` helper provides a way to pass triggers for behavior (usually just a function) between components, and into components from controllers.
+
+Reference link: https://www.emberjs.com/api/classes/Ember.Templates.helpers.html#method_action
