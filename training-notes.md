@@ -8,6 +8,27 @@
 
 * Use observers very RARELY!
 
+### reopen() vs reopenClass()
+
+https://guides.emberjs.com/v2.13.0/object-model/reopening-classes-and-instances/
+
+* Use extend() to modify Prototypes.  extend() returns a new type of object.
+
+``` var Developer = Ember.Object.extend() {...} ```
+
+* Use reopen() to modify Prototype, after a Prototype has been created allowing for further changes. 
+
+You should only use reopen() if no instances of this Prototype has been created!
+
+* Use reopenClass() to add functions/ properties to a Constructor. 
+
+**Reference notes:**
+
+https://coderwall.com/p/qjzbig/understanding-constructor-and-prototype
+
+https://stackoverflow.com/questions/14026302/difference-between-reopen-and-reopenclass-in-ember-js
+
+
 
 
 
